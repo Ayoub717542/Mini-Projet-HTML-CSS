@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3 ease;
+}
+body{
+height:100vh;
+    font-family: "Inter", sans-serif;
+
+}
+
+.nav-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 70px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;  
+}
+.logo img{
+    padding-top: 6px;
+    width: 25%;
+    object-fit: cover; 
+    transition: all 0.3s ease;
+}
+.container {
+    padding-top: 80px;
+    padding: bottom 50%;  
+}
+.container h2, h3{
+  margin-top: 10px;
+  padding-top: 5px;
+  padding: 10px  ;
+  display: flex;
+  justify-content: center;
+}
+
+.container img{   
+      margin: 0 auto;
+       max-height: 250px; 
+    display: block;    
+    width: 100%;             
+    height: auto;               
+    border-radius: 10px;
+     box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    object-fit: cover;         
+    transition: transform 0.3s;
+                
+}
+.first_section {
+    text-align: center;   
+    margin: 20px auto;   
+    max-width: 700px;   
+}
+.first_section button a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+.first_section button  {
+   border-radius: 10px;
+    display: inline-block;
+    margin: 15px;
+    text-decoration: none;
+    background-color: rgb(79, 79, 237);
+    padding: 10px 20px;
+}
+
+.sentir_container{
+  display: flex;
+  justify-content: space-between ;
+}
+.pay-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.pay-section h1{
+ margin: 10px;
+}
+.pay-section h5 {
+margin: 20px;
+color:lightgray;
+}
+.pay-section button{
+padding: 20px;
+margin-bottom: 10px;
+background-color: rgb(79, 79, 237);
+border: none;
+border-radius: 5px;
+color: white;
+
+}
+.pay-section .pay-card{
+position: relative;
+display: flex;
+flex-direction: row;
+width: 30%;
+border: 0.1px solid black;
+border-radius: 5px;
+background-color: rgb(255, 255, 255);
+}
+.pay-section .pay-card ,.pay-card .price-info{
+  display: flex;
+  flex-direction: row;
+}
+.pay-card .badge {
+  position: absolute;
+  top: -12px;
+  right: 2px;
+  background: #cb23e5; 
+  color: white;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+.sentir_container i {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}
+.nav-links li{
+    margin-left: 2rem;
+    list-style: none;
+}
+.nav-links a{
+    color: #000000 ;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.first_image{
+  width: 100%;
+  object-fit: cover;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin: 10PX;
+  padding: 10px;
+}
+.cards .card-one{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border:none;
+        border-radius: 10px;
+        padding: 16px;
+        width: 300px;
+        height: 250px; 
+        box-sizing: border-box; 
+        gap: 8px; 
+        background-color: rgb(113, 118, 250);
+}
+.cards .card-one h6{
+  color:lightgray;
+}
+.cards .card-one .quote{
+  color: rgb(98, 174, 239);
+  font-size: 35px;
+}
+
+
+
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(33, 28, 124);
+  color: rgb(83, 82, 82);
+  text-align: center;
+}
+ .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
